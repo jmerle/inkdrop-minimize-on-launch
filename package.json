@@ -1,7 +1,7 @@
 {
   "name": "minimize-on-launch",
   "version": "0.0.0",
-  "description": "Minimize Inkdrop on launch",
+  "description": "Minimize Inkdrop on launch with a CLI flag",
   "repository": "https://github.com/jmerle/inkdrop-minimize-on-launch",
   "license": "MIT",
   "main": "./dist/index",

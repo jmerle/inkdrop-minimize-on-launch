@@ -15,6 +15,10 @@ function activate() {
     return;
   }
 
+  if (!_electron.remote.process.argv.includes('--minimized')) {
+    return;
+  }
+
   const lastProcessId = inkdrop.config.get('minimize-on-launch.pid') || -1;
   const currentProcessId = _electron.remote.process.pid; // If the process id is the same as the last saved id, we can assume the
   // window was simply reloaded. While there is a chance for the pid to be the

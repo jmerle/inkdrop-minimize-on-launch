@@ -7,6 +7,10 @@ export function activate() {
     return;
   }
 
+  if (!remote.process.argv.includes('--minimized')) {
+    return;
+  }
+
   const lastProcessId = inkdrop.config.get('minimize-on-launch.pid') || -1;
   const currentProcessId = remote.process.pid;
 
