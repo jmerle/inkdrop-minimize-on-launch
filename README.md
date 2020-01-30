@@ -4,7 +4,7 @@
 [![Latest release](https://img.shields.io/github/v/release/jmerle/inkdrop-minimize-on-launch)](https://my.inkdrop.app/plugins/minimize-on-launch)
 [![License](https://img.shields.io/github/license/jmerle/inkdrop-minimize-on-launch)](https://github.com/jmerle/inkdrop-minimize-on-launch/blob/master/LICENSE)
 
-This plugin makes it possible to minimize Inkdrop on launch using the `--minimized` flag.
+This plugin makes it possible to minimize Inkdrop on launch using the `--minimize` flag.
 
 ## Install
 
