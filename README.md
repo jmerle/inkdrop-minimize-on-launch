@@ -1,6 +1,6 @@
 # Minimize On Launch plugin for Inkdrop
 
-[![Build Status](https://github.com/jmerle/inkdrop-minimize-on-launch/workflows/Build/badge.svg)](https://github.com/jmerle/inkdrop-minimize-on-launch/actions?query=workflow%3ABuild)
+[![Build status](https://github.com/jmerle/inkdrop-minimize-on-launch/workflows/Build/badge.svg)](https://github.com/jmerle/inkdrop-minimize-on-launch/actions?query=workflow%3ABuild)
 [![Latest release](https://inkdrop-plugin-badge.vercel.app/api/version/minimize-on-launch?style=flat)](https://my.inkdrop.app/plugins/minimize-on-launch)
 [![Downloads](https://inkdrop-plugin-badge.vercel.app/api/downloads/minimize-on-launch?style=flat)](https://my.inkdrop.app/plugins/minimize-on-launch)
 [![License](https://img.shields.io/github/license/jmerle/inkdrop-minimize-on-launch)](https://github.com/jmerle/inkdrop-minimize-on-launch/blob/master/LICENSE)
