@@ -53,6 +53,9 @@ export function activate() {
   // before the app is ready.
   listener = inkdrop.onAppReady(() => {
     if (inkdrop.config.get(HIDE_WINDOW_KEY)) {
+      // We need to blur before we hide to ensure application:toggle-main-window brings it back
+      // See https://forum.inkdrop.app/t/application-toggle-main-window-on-windows-10/1745
+      inkdrop.window.blur();
       inkdrop.window.hide();
     } else {
       inkdrop.window.minimize();
