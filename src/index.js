@@ -6,12 +6,20 @@ let listener = null;
 
 const PID_KEY = 'minimize-on-launch.pid';
 const ALWAYS_MINIMIZE_KEY = 'minimize-on-launch.alwaysMinimize';
+const HIDE_WINDOW_KEY = 'minimize-on-launch.hideWindow';
 
 export const config = {
   alwaysMinimize: {
     title: 'Always minimize on launch',
     description:
       'By default Inkdrop is only minimized on launch if the --minimize flag is provided.',
+    type: 'boolean',
+    default: false,
+  },
+  hideWindow: {
+    title: 'Hide window',
+    description:
+      'Hides Inkdrop instead of minimizing it. When this setting is enabled the window can be shown again using the application:toggle-main-window command or using the Tray plugin.',
     type: 'boolean',
     default: false,
   },
@@ -44,7 +52,11 @@ export function activate() {
   // The window is not always restored to the correct size if it is minimized
   // before the app is ready.
   listener = inkdrop.onAppReady(() => {
-    inkdrop.window.minimize();
+    if (inkdrop.config.get(HIDE_WINDOW_KEY)) {
+      inkdrop.window.hide();
+    } else {
+      inkdrop.window.minimize();
+    }
   });
 }
 
